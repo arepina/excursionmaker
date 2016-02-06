@@ -1,0 +1,158 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#a8d324"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.anast.app.PlayActivity">
+
+    <TableRow
+        android:id="@+id/tabletable10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/backbutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo"
+                    android:id="@+id/photobutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:id="@+id/videobutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:id="@+id/musicbutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#d3e992"
+                    android:layout_weight="1"
+                    android:id="@+id/textbutstep4" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geo"
+                    android:id="@+id/playbutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/savebutstep4"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/row112"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/finaltext"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"/>
+        </ScrollView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabletable13">
+
+        <Button
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:text="Save my object"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200px"
+            android:layout_weight="1"
+            android:background="#d3e992"
+            android:textColor="#1b9900"
+            android:id="@+id/selectBtnstep4" />
+    </TableRow>
+
+</TableLayout>

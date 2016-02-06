@@ -1,0 +1,220 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#a8d324"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.anast.app.AudioActivity">
+
+    <TableRow
+        android:id="@+id/tabletable6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/backbutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo"
+                    android:id="@+id/photobutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:id="@+id/videobutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:id="@+id/musicbutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"
+                    android:id="@+id/textbutstep3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geo"
+                    android:id="@+id/playbutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/savebutstep3"
+                    android:textAlignment="center"
+                    android:textColor="#1b9900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"
+            android:textSize="20dp"
+            android:textColor="#1b9900"
+            android:layout_weight="1">
+        </ListView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/songThumbnail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/adele"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/trackcover" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Title"
+                    android:id="@+id/SongsName"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player_footer_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#a8d324"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:background="#a8d324"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btnPlay"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="#FFA8D324"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/play"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabletable5">
+
+        <Button
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:text="Select"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200px"
+            android:layout_weight="1"
+            android:background="#d3e992"
+            android:textColor="#1b9900"
+            android:id="@+id/selectBtnstep3" />
+    </TableRow>
+
+</TableLayout>

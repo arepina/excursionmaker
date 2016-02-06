@@ -1,0 +1,167 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#a8d324"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.example.anast.app.PhotoActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/backbut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo"
+                    android:id="@+id/photobut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:background="#d3e992"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:id="@+id/videobut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:id="@+id/musicbut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"
+                    android:id="@+id/textbut" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geo"
+                    android:id="@+id/playbut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:id="@+id/savebut"
+                    android:textAlignment="center"
+                    android:textColor="#009900"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:layout_column="1"
+                    android:background="#e2f0b6"
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/PhoneImageGrid"
+            android:layout_weight="1"
+            android:stretchMode="spacingWidthUniform"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:columnWidth="80dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:layout_column="0"
+            android:scrollIndicators="right"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="auto_fit"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewlook"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_column="1" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:id="@+id/selectBtn"
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:text="Select"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200px"
+            android:layout_weight="1"
+            android:background="#d3e992"
+            android:textColor="#009900" />
+    </TableRow>
+
+</TableLayout>
